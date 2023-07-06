@@ -1,4 +1,8 @@
 /* Header */
+/* body{
+    width: 70%;
+    margin: auto;
+} */
 header{
     width: 90%;
     margin: auto;
@@ -10,7 +14,7 @@ hr{
 }
 /* aplico flex al contenedor */
 .contenedor{
-    width: 90%;
+    width: 60%;
     margin: auto;
     display: flex;
 }
