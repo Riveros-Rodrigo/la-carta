@@ -1,0 +1,95 @@
+/* Header */
+header{
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0rem 1rem;
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+/* aplico flex al contenedor */
+.contenedor{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+aside{
+    margin-right: 6rem;
+    border-right:  1px solid #000;
+    padding-right: 3rem;
+    margin-top: 2rem;
+}
+aside nav ul li{
+    padding: 0.5rem 0rem;
+}
+/* Seccion entradas */
+main .entradas{
+    margin-top: 2rem;
+    position: relative;
+}
+main .entradas div{
+    position: absolute;
+    top: 0;
+    right: -12rem;
+    border: 1px solid var(--colorGris);
+}
+main .entradas h2{
+    padding-bottom: 2rem;
+}
+main .entradas article{
+    padding-bottom: 2rem;
+}
+/* seccion raciones */
+main .racion h2{
+    margin-top: 2rem;
+}
+main .racion article{
+    padding: 2rem 0rem;
+}
+main .volver a{
+    color: #000;
+}
+/* Footer */
+footer{
+    background-color: var(--colorGris);
+    border-top: 1px solid #000;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+footer img{
+    width: 15rem;
+}
+footer nav ul li a{
+    color: var(--colorBlanco);
+}
+/* TABLET */
+@media (max-width:768px){
+    main .entradas{
+        margin-top: 2rem;
+    }
+    main .entradas div{
+        position: relative;
+        right: 0;
+        border: none;
+    }
+}
+/* CELULAR */
+@media (max-width:320px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        border-right:  none;
+        border-bottom:  1px solid #000;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
