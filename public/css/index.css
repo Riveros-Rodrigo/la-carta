@@ -1,8 +1,3 @@
-/* Header */
-/* body{
-    width: 70%;
-    margin: auto;
-} */
 header{
     width: 90%;
     margin: auto;
@@ -17,6 +12,7 @@ hr{
     width: 60%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 aside{
     margin-right: 6rem;
@@ -70,6 +66,13 @@ footer img{
 footer nav ul li a{
     color: var(--colorBlanco);
 }
+@media (max-width:1050px){
+    main .entradas div{
+        position: relative;
+        right: 0;
+        border: none;
+    }
+}
 /* TABLET */
 @media (max-width:768px){
     main .entradas{
@@ -82,15 +85,16 @@ footer nav ul li a{
     }
 }
 /* CELULAR */
-@media (max-width:320px){
+@media (max-width:400px){
     .contenedor{
         display: flex;
         flex-direction: column;
+        width: 90%;
+        margin: auto;
     }
     aside{
         border-right:  none;
         border-bottom:  1px solid #000;
-        width: 100%;
     }
     footer{
         display: flex;
